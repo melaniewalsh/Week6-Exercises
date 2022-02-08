@@ -1,0 +1,37 @@
+---
+title: "Test Report"
+author: "Prof. Walsh"
+date: '2022'
+output:
+  html_document: default
+  pdf_document: default
+---
+
+    1. Give the report a new title and add your own name
+    2. Calculate the average age for all Survivor contestants
+    3. Show the code and output from the last cell
+
+Here's the distribution of ages for Survivor contestants.
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+castaways <- read.csv("https://github.com/melaniewalsh/Neat-Datasets/raw/main/Survivor-Castaways.csv")
+```
+
+```{r, echo=FALSE}
+# Extract the "age" column
+ages <-
+# Make a histogram plot of ages
+hist(ages)
+# Calculate average age
+avg_age <- 
+```
+
+The average age of Survivor contestants is: `r avg_age`.
+
+To calculate the maximum and minimum, we can use the following code:
+
+```{r, echo=FALSE, eval=FALSE}
+print(max(ages))
+print(min(ages))
+```
