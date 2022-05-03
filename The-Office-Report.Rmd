@@ -1,0 +1,39 @@
+---
+title: "The Office Report"
+author: "Your name"
+date: '2022'
+output:
+  html_document: default
+  pdf_document: default
+---
+
+1. Give the report a new title and add your own name
+2. Make a plot of average IMDB ratins per season
+3. Calculate the average IMDB rating for all The Office episodes
+4. Include an image from The Office somewhere in the report
+
+![](https://static.onecms.io/wp-content/uploads/sites/6/2018/05/gettyimages-141187266-2000.jpg)
+Here's a plot of average IMDB rating for each season of The Office.
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+# Load library
+library("schrute")
+library("dplyr")
+library("ggplot2")
+
+# Load The Office data
+office_df <- theoffice
+
+# Which season of The Office was the best?
+# Calculate the average IMDB rating for each season
+rating_per_season <- NULL
+
+# Now plot the average IMDB rating for each season as a scatterplot, a line plot, or a bar plot
+
+```
+
+```{r, echo=FALSE}
+# Calculate average IMDB rating and pull the value
+avg_rating <- NULL
+```
+
+The average IMDB rating for The Office episodes is: `r avg_rating`.
