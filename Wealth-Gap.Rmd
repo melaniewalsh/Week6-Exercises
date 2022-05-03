@@ -1,0 +1,20 @@
+---
+title: "The Wealth Gap"
+output: html_document
+---
+
+## Homeownership
+
+Here's a report about homeownership trends over time for different racial groups.
+
+Each collaborator should make a different change -- convert to a line plot, add color, or hide the code.
+
+```{r}
+home_owner <- read.csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2021/2021-02-09/home_owner.csv')
+
+
+library(ggplot2)
+
+ggplot(data = home_owner) +
+  geom_point(mapping = aes(x = year, y = home_owner_pct)) 
+```
